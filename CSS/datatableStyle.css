@@ -1,0 +1,49 @@
+.custom-control-label,
+.btn-sm {
+    font-size: 11px;
+    padding: 0.2rem 0.5rem;
+}
+
+.input-group-text {
+    font-size: 12px;
+    padding: 0.2rem 0.5rem;
+}
+
+.custom-control.custom-radio+.custom-control.custom-radio {
+    margin-left: 0.1px;
+}
+
+.formTopbar {
+    font-size: 12px;
+    padding: 0.15rem 0.25rem;
+}
+
+.button {
+    padding-bottom: 6px;
+}
+
+.tablecard {
+
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+    border-radius: 7px;
+}
+
+.dataTables_length {
+    font-size: small;
+}
+
+.dataTables_filter {
+    font-size: small;
+}
+
+.mrgn {
+    margin-right: 12%;
+}
+
+input[type=text]{
+    border-color: rgb(213, 220, 228);
+}
+
+

@@ -28,7 +28,6 @@ li {
 }
 
 /* Layout skeleton */
-
 .wrapper {
     align-items: stretch;
     display: flex;
@@ -43,11 +42,10 @@ li {
     transition: all 0.35s ease-in-out;
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1111;
-    overflow-y: auto;  
+    overflow-y: auto;
 }
 
 /* Sidebar collapse */
-
 #sidebar.collapsed {
     margin-left: -264px;
 }
@@ -57,7 +55,7 @@ li {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     transition: all 0.35s ease-in-out;
 }
 
@@ -108,6 +106,15 @@ a.sidebar-link {
     width: 100vw;
 }
 
+
+#navRightMenus {
+    margin-left: auto;
+}
+
+.nest-item {
+    margin-left: 10%;
+}
+
 /* Responsive */
 
 @media (min-width:768px) {
@@ -116,10 +123,50 @@ a.sidebar-link {
     }
 }
 
-#navRightMenus{
-    margin-left: auto;
+@media (max-width:560px) {
+    .content {
+        width: auto;
+    }
+
+    #sidebar {
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    #sidebar a {
+        font-size: 15px;
+    }
+
+    #sidebar.collapsed {
+        margin-left: -200px;
+    }
 }
 
-.nest-item{
-    margin-left: 10%;
+#sideBarMenus a:hover {
+    font-size: 17px;
+    margin: 4px 2px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.sidebar-logo a:hover{
+    text-decoration: none;
+}
+
+
+/* -------Scrollbar--------- */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #beb7b7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

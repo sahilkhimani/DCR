@@ -84,7 +84,7 @@
         "name": "Distributor Receive",
         "icon": "",
         "hasChildren": false,
-        "url": "/Purchase/DistributorReceive",
+        "url": "DistributorReceive.html",
         "parentID": "10"
     },
     {
