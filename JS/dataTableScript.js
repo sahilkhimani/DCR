@@ -2,7 +2,6 @@ document.getElementById('uploadButton').addEventListener('click', function () {
     document.getElementById('excelFileInput').click();
 });
 
-
 $(document).ready(function () {
     $('#myTable').DataTable({
         dom: "lBfrtip",
@@ -42,4 +41,3 @@ document.getElementById("excelFileInput").addEventListener("change", function (e
         reader.readAsArrayBuffer(file);
     }
 });
-

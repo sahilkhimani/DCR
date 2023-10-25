@@ -4,7 +4,7 @@
         "name": "Dashboard",
         "icon": "fas fa-tachometer-alt",
         "hasChildren": false,
-        "url": "/dashboard.html",
+        "url": "dashboard.html",
         "parentID": ""
     },
     {
@@ -20,7 +20,7 @@
         "name": "Import Data",
         "icon": "",
         "hasChildren": false,
-        "url": "/BasicData/ImportData",
+        "url": "ImportData.html",
         "parentID": "2"
     },
     {
@@ -28,7 +28,7 @@
         "name": "Export Data",
         "icon": "",
         "hasChildren": false,
-        "url": "/BasicData/ExportData",
+        "url": "ExportData.html",
         "parentID": "2"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Customer Price",
         "icon": "",
         "hasChildren": false,
-        "url": "/Model&Price/CustomerPrice",
+        "url": "CustomerPrice.html",
         "parentID": "5"
     },
     {
@@ -60,7 +60,7 @@
         "name": "Warehouse",
         "icon": "",
         "hasChildren": false,
-        "url": "/Account/Warehouse",
+        "url": "Warehouse.html",
         "parentID": "7"
     },
     {
@@ -68,7 +68,7 @@
         "name": "Customer Permission",
         "icon": "",
         "hasChildren": false,
-        "url": "/Account/CustomerPermission",
+        "url": "CustomerPermission.html",
         "parentID": "7"
     },
     {
@@ -92,7 +92,7 @@
         "name": "Inbound Order",
         "icon": "",
         "hasChildren": false,
-        "url": "/Purchase/InboundOrder",
+        "url": "InboundOrder.html",
         "parentID": "10"
     },
     {
@@ -108,7 +108,7 @@
         "name": "Delivery Order",
         "icon": "",
         "hasChildren": false,
-        "url": "/Sales/DeliveryOrder",
+        "url": "DeliveryOrder.html",
         "parentID": "13"
     },
     {
@@ -124,7 +124,7 @@
         "name": "Customer Inventory Query",
         "icon": "",
         "hasChildren": false,
-        "url": "/Inventory/CustomerInventoryQuery",
+        "url": "CustomerInventoryQuery.html",
         "parentID": "15"
     },
     {
@@ -132,7 +132,7 @@
         "name": "Inventory Initialization",
         "icon": "",
         "hasChildren": false,
-        "url": "/Inventory/InventoryInitialization",
+        "url": "InventoryInitialization.html",
         "parentID": "15"
     },
     {
@@ -140,7 +140,7 @@
         "name": "IMEI Inventory Query New",
         "icon": "",
         "hasChildren": false,
-        "url": "/Inventory/ImeiInventoryQueryNew",
+        "url": "ImeiInventoryQueryNew.html",
         "parentID": "15"
     },
     {
@@ -148,7 +148,7 @@
         "name": "Customer Transfer",
         "icon": "",
         "hasChildren": false,
-        "url": "/Inventory/CustomerTransfer",
+        "url": "CustomerTransfer.html",
         "parentID": "15"
     },
     {
@@ -156,7 +156,7 @@
         "name": "Inventory Losses Check",
         "icon": "",
         "hasChildren": false,
-        "url": "/Inventory/InventoryLossesCheck",
+        "url": "InventoryLossesCheck.html",
         "parentID": "15"
     },
     {
@@ -172,7 +172,7 @@
         "name": "IMEI Purchase Query New",
         "icon": "",
         "hasChildren": false,
-        "url": "/ReportAnalysis/IMEIPurchaseQueryNew",
+        "url": "IMEIPurchaseQueryNew.html",
         "parentID": "21"
     },
     {
@@ -180,7 +180,7 @@
         "name": "IMEI Sales Query New",
         "icon": "",
         "hasChildren": false,
-        "url": "/ReportAnalysis/IMEISalesQueryNew",
+        "url": "IMEISalesQueryNew.html",
         "parentID": "21"
     },
     {
@@ -188,7 +188,7 @@
         "name": "IMEI Return Query",
         "icon": "",
         "hasChildren": false,
-        "url": "/ReportAnalysis/IMEIReturnQuery",
+        "url": "IMEIReturnQuery.html",
         "parentID": "21"
     },
     {
@@ -196,7 +196,7 @@
         "name": "Customer Sales Query",
         "icon": "",
         "hasChildren": false,
-        "url": "/ReportAnalysis/CustomerSalesQuery",
+        "url": "CustomerSalesQuery.html",
         "parentID": "21"
     },
     {
@@ -204,7 +204,7 @@
         "name": "Customer PSI",
         "icon": "",
         "hasChildren": false,
-        "url": "/ReportAnalysis/CustomerPSI",
+        "url": "CustomerPSI.html",
         "parentID": "21"
     },
     {
@@ -212,7 +212,7 @@
         "name": "Customer Activation PSI",
         "icon": "",
         "hasChildren": false,
-        "url": "/ReportAnalysis/CustomerActivationPSI",
+        "url": "CustomerActivationPSI.html",
         "parentID": "21"
     },
     {
@@ -220,7 +220,7 @@
         "name": "IMEI Query",
         "icon": "fa-solid fa-qrcode",
         "hasChildren": false,
-        "url": "/IMEIQuery",
+        "url": "IMEIQuery.html",
         "parentID": ""
     }
 ]

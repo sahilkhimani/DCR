@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbound Order</title>
+    <script src="./JS/kit.fontawesome.js"></script>
+    <script src="./JS/xlsx.full.min.js"></script>
+    <script src="./JS/jquery-3.1.1.min.js"></script>
+    <script src="./JS/jquery-3.6.0.min.js"></script>
+    <script src="./JS/jquery-datatables.min.js"></script>
+    <script src="./JS/datatables.button.min.js"></script>
+    <link rel="stylesheet" href="./CSS/bootstrap.min-4.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min-5.css">
+    <link rel="stylesheet" href="./CSS/datatables.min.css">
+    <link rel="stylesheet" href="./CSS/databtables.bootstrap.buttons.min.css">
+    <link rel="stylesheet" href="./CSS/sideBarStyle.css">
+    <link rel="stylesheet" href="./CSS/datatableStyle.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="dashboard.html">INOVI SOLUTIONS</a>
+                </div>
+                <ul id="sideBarMenus" class="sidebar-nav">
+                    <!-- Generated SideBar -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!-- Button for sidebar toggle -->
+                <button class="btn" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navRightMenus">
+                    <ul class="navbar-nav">
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <form class="formTopbar">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">INBOUND ID</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">DELIVERY DATE</div>
+                                        <input type="date" class="form-control">
+                                        _
+                                        <input type="date" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">MATERIAL ID</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">MODEL</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER REGION</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER TYPE</div>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Distributor</option>
+                                            <option value="2">Sub-Dealer</option>
+                                            <option value="3">Third-Dealer</option>
+                                            <option value="3">Retailer</option>
+                                            <option value="4">Online</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">ORDER ID</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">WAREHOUSE</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BRAND</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">MARKET NAME</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER COUNTRY</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER TYPE</div>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Distributor</option>
+                                            <option value="2">Sub-Dealer</option>
+                                            <option value="3">Third-Dealer</option>
+                                            <option value="3">Retailer</option>
+                                            <option value="4">Online</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">INBOUND DATE</div>
+                                        <input type="date" class="form-control">
+                                        _
+                                        <input type="date" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">DELIVERY ORDER ID</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">TYPE</div>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Primary</option>
+                                            <option value="2">Secondry</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER CATEGORY</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER REGION</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER COUNTRY</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">TYPE</div>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Web Created</option>
+                                            <option value="2">App Scan</option>
+                                            <option value="3">Web Sync</option>
+                                            <option value="3">App Input</option>
+                                            <option value="4">App Quick Recieve</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="form-inline justify-content-end col-md-12 mt-2 mb-2">
+                            <div class="button">
+                                <button type="button" class="btn btn-outline-success btn-sm"><i
+                                        class="fa-solid fa-sim-card"></i> Order IMEI</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm"><i
+                                        class="fa-regular fa-share-from-square"></i> Export Details</button>
+                                <button id="uploadButton" type="button" class="btn btn-outline-danger btn-sm"><i
+                                        class="fa-regular fa-share-from-square"></i> Export</button>
+                            </div>
+                        </div>
+
+
+                        <!-------------- Table ----------------->
+                        <div class="container-fluid">
+                            <div class="tablecard small col-md-12">
+                                <table id="myTable" class="table table-striped table-bordered small">
+                                    <thead>
+                                        <tr class="font-weight-bold">
+                                            <td>Inbound ID</td>
+                                            <td>Sales Order ID</td>
+                                            <td>Delivery Order ID</td>
+                                            <td>Inbound Date</td>
+                                            <td>Delivery Date</td>
+                                            <td>Order Status</td>
+                                            <td>Type</td>
+                                            <td>Material ID</td>
+                                            <td>Product</td>
+                                            <td>Item</td>
+                                            <td>Model</td>
+                                            <td>SP/FP</td>
+                                            <td>Market Name</td>
+                                            <td>Brand</td>
+                                            <td>Order Quantity</td>
+                                            <td>Recieved Quantity</td>
+                                            <td>Not Recieved</td>
+                                            <td>Seller ID</td>
+                                            <td>Seller Name</td>
+                                            <td>Seller Type</td>
+                                            <td>Buyer ID</td>
+                                            <td>Buyer Name</td>
+                                            <td>Buyer Type</td>
+                                            <td>Warehouse ID</td>
+                                            <td>Warehouse Name</td>
+                                            <td>Buyer Category</td>
+                                            <td>Creater</td>
+                                            <td>Create Date</td>
+                                            <td>Updater</td>
+                                            <td>Update Date</td>
+                                            <td>Seller Country</td>
+                                            <td>Seller Region1</td>
+                                            <td>Seller Region2</td>
+                                            <td>Seller Region3</td>
+                                            <td>Buyer Country</td>
+                                            <td>Buyer Region1</td>
+                                            <td>Buyer Region2</td>
+                                            <td>Buyer Region3</td>
+                                            <td>Upload Type</td>
+                                            <td>Operation</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./JS/dataTableScript.js"></script>
+    <script src="./JS/datatables.bootstrap.buttons.js"></script>
+    <script src="./JS/bootstrap.bundle.min-5.js"></script>
+    <script src="./JS/sideBarScript.js"></script>
+</body>
+
+</html>

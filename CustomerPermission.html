@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Permission</title>
+    <script src="./JS/kit.fontawesome.js"></script>
+    <script src="./JS/xlsx.full.min.js"></script>
+    <script src="./JS/jquery-3.1.1.min.js"></script>
+    <script src="./JS/jquery-3.6.0.min.js"></script>
+    <script src="./JS/jquery-datatables.min.js"></script>
+    <script src="./JS/datatables.button.min.js"></script>
+    <link rel="stylesheet" href="./CSS/bootstrap.min-4.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min-5.css">
+    <link rel="stylesheet" href="./CSS/datatables.min.css">
+    <link rel="stylesheet" href="./CSS/databtables.bootstrap.buttons.min.css">
+    <link rel="stylesheet" href="./CSS/sideBarStyle.css">
+    <link rel="stylesheet" href="./CSS/datatableStyle.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="dashboard.html">INOVI SOLUTIONS</a>
+                </div>
+                <ul id="sideBarMenus" class="sidebar-nav">
+                    <!-- Generated SideBar -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!-- Button for sidebar toggle -->
+                <button class="btn" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navRightMenus">
+                    <ul class="navbar-nav">
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <form class="formTopbar">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER COUNTRY</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER BRAND</div>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Infinix</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER TYPE</div>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Distributor</option>
+                                            <option value="2">Sub-Dealer</option>
+                                            <option value="3">Third-Dealer</option>
+                                            <option value="3">Retailer</option>
+                                            <option value="4">Online</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER COUNTRY</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER BRAND</div>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Infinix</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER TYPE</div>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Distributor</option>
+                                            <option value="2">Sub-Dealer</option>
+                                            <option value="3">Third-Dealer</option>
+                                            <option value="3">Retailer</option>
+                                            <option value="4">Online</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="form-inline justify-content-end col-md-12 mt-2 mb-2">
+                            <div class="button">
+                                <button id="uploadButton" type="button" class="btn btn-outline-danger btn-sm"><i
+                                        class="fa-regular fa-share-from-square"></i> Export</button>
+                            </div>
+                        </div>
+
+
+                        <!-------------- Table ----------------->
+                        <div class="container-fluid">
+                            <div class="tablecard small col-md-12">
+                                <table id="myTable" class="table table-striped table-bordered small">
+                                    <thead>
+                                        <tr class="font-weight-bold">
+                                            <td>Status</td>
+                                            <td>Box ID</td>
+                                            <td>IMEI/SN</td>
+                                            <td>IMEI List</td>
+                                            <td>Brand</td>
+                                            <td>Category</td>
+                                            <td>Series</td>
+                                            <td>Model</td>
+                                            <td>Market Name</td>
+                                            <td>Material ID</td>
+                                            <td>Product</td>
+                                            <td>Item</td>
+                                            <td>Type</td>
+                                            <td>Warehouse ID</td>
+                                            <td>Warehouse Name</td>
+                                            <td>Warehouse Type</td>
+                                            <td>SAP Customer ID</td>
+                                            <td>Customer ID</td>
+                                            <td>Customer Name</td>
+                                            <td>Customer Type</td>
+                                            <td>Upstream Delivery Date</td>
+                                            <td>Recieve Date</td>
+                                            <td>Inventory Duration</td>
+                                            <td>E Warrenty Date</td>
+                                            <td>Activated Or Not</td>
+                                            <td>Activated Country</td>
+                                            <td>Activation Date</td>
+                                            <td>Sales Region1</td>
+                                            <td>Sales Region2</td>
+                                            <td>Sales Region3</td>
+                                            <td>sales Region4</td>
+                                            <td>Sales region5</td>
+                                            <td>Dealer Category</td>
+                                            <td>Factory Delivery Country</td>
+                                            <td>Factory Delivery Date</td>
+                                            <td>Customer Country</td>
+                                            <td>SP/FP</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./JS/dataTableScript.js"></script>
+    <script src="./JS/datatables.bootstrap.buttons.js"></script>
+    <script src="./JS/bootstrap.bundle.min-5.js"></script>
+    <script src="./JS/sideBarScript.js"></script>
+</body>
+
+</html>
