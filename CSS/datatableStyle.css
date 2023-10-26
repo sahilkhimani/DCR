@@ -6,6 +6,8 @@
 
 .txtSize{
     font-size: 11px !important;
+    white-space: wrap;
+    text-align: left;
 }
 
 .custom-control.custom-radio+.custom-control.custom-radio {
@@ -36,3 +38,6 @@
     width: 100% !important;
 }
 
+input[type], select{
+    font-size: 12px !important;
+}

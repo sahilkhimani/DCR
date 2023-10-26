@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Permission</title>
+    <title>Delivery Order</title>
     <script src="./JS/kit.fontawesome.js"></script>
     <script src="./JS/xlsx.full.min.js"></script>
     <script src="./JS/jquery-3.1.1.min.js"></script>
@@ -79,7 +79,14 @@
 
                                     <div class="input-group input-group-sm mb-2">
                                         <div class="input-group-text col-sm-4 txtSize">UPLOAD TYPE</div>
-                                        <input type="text" class="form-control">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Web Created</option>
+                                            <option value="2">App Scan</option>
+                                            <option value="3">Web Sync</option>
+                                            <option value="3">App Input</option>
+                                            <option value="4">App Quick Recieve</option>
+                                        </select>
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
@@ -110,6 +117,11 @@
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
                                         <div class="input-group-text col-sm-4 txtSize">BUYER CATEGORY</div>
                                         <input type="text" class="form-control">
                                     </div>
@@ -132,25 +144,25 @@
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">BUYER</div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="input-group input-group-sm mb-2">
                                         <div class="input-group-text col-sm-4 txtSize">BUYER COUNTRY</div>
                                         <input type="text" class="form-control">
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">ACTIVATED</div>
+                                        <div class="input-group-text col-sm-4 txtSize">ACTIVATED LOSS OR NOT</div>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">STATUS</div>
-                                        <input type="text" class="form-control">
+                                        <div class="input-group-text col-sm-4 txtSize">Status</div>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Goods Receipt</option>
+                                            <option value="2">Not Known</option>
+                                            <option value="3">Not Known</option>
+                                        </select>
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
@@ -162,7 +174,12 @@
 
                                     <div class="input-group input-group-sm mb-2">
                                         <div class="input-group-text col-sm-4 txtSize">HAVE DISCOUNT</div>
-                                        <input type="text" class="form-control">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Not Known</option>
+                                            <option value="2">Not Known</option>
+                                            <option value="3">Not Known</option>
+                                        </select>
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
@@ -189,7 +206,12 @@
 
                                     <div class="input-group input-group-sm mb-2">
                                         <div class="input-group-text col-sm-4 txtSize">PAYMENT MODE</div>
-                                        <input type="text" class="form-control">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Not Known</option>
+                                            <option value="2">Not Known</option>
+                                            <option value="3">Not Known</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +226,7 @@
                                 <button type="button" class="btn btn-outline-danger btn-sm"><i
                                         class="fa-regular fa-share-from-square"></i> Export</button>
                                 <button id="uploadButton" class="btn btn-outline-dark btn-sm"><i
-                                        class="fa-solid fa-arrow-up-from-bracket"></i> Import Recieve</button>
+                                        class="fa-solid fa-arrow-up-from-bracket"></i> Import</button>
                                 <input type="file" id="excelFileInput" style="display: none;">
                             </div>
                         </div>
@@ -250,6 +272,7 @@
                                             <td>Seller Region1</td>
                                             <td>Seller Region2</td>
                                             <td>Seller Region3</td>
+                                            <td>Buyer Country</td>
                                             <td>Buyer Region1</td>
                                             <td>Buyer Region2</td>
                                             <td>Buyer Region3</td>

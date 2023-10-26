@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distributor Receive</title>
+    <title>Inventory Initialization</title>
     <script src="./JS/kit.fontawesome.js"></script>
     <script src="./JS/xlsx.full.min.js"></script>
     <script src="./JS/jquery-3.1.1.min.js"></script>
@@ -100,7 +100,14 @@
                                 <div class="col-md-4">
                                     <div class="input-group input-group-sm mb-2">
                                         <div class="input-group-text col-sm-4 txtSize">CUSTOMER TYPE</div>
-                                        <input type="text" class="form-control">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>All</option>
+                                            <option value="1">Distributor</option>
+                                            <option value="2">Sub-Dealer</option>
+                                            <option value="3">Third-Dealer</option>
+                                            <option value="3">Retailer</option>
+                                            <option value="4">Online</option>
+                                        </select>
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
@@ -152,7 +159,7 @@
                                             <td>Warehouse Type</td>
                                             <td>Country</td>
                                             <td>Create Date</td>
-                                            <td>Creator/td>
+                                            <td>Creator</td>
                                             <td>Operation</td>
                                         </tr>
                                     </thead>

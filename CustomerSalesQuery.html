@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMEI Inventory Query New</title>
+    <title>Customer Sales Query</title>
     <script src="./JS/kit.fontawesome.js"></script>
     <script src="./JS/xlsx.full.min.js"></script>
     <script src="./JS/jquery-3.1.1.min.js"></script>
@@ -63,43 +63,52 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">CUSTOMER</div>
+                                        <div class="input-group-text col-sm-4 txtSize">DATE</div>
+                                        <input type="date" class="form-control">
+                                        _
+                                        <input type="date" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER</div>
                                         <input type="text" class="form-control">
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">BOX ID</div>
+                                        <div class="input-group-text col-sm-4 txtSize">BRAND</div>
                                         <input type="text" class="form-control">
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">WAREHOUSE</div>
+                                        <div class="input-group-text col-sm-4 txtSize">SELLER COUNTRY</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER</div>
                                         <input type="text" class="form-control">
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">ACTIVATED OR NOT</div>
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER REGION</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SP/FP</div>
                                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                             <option selected>All</option>
-                                            <option value="1">Not Known</option>
-                                            <option value="2">Not Known</option>
+                                            <option value="1">Smart</option>
+                                            <option value="2">Feature</option>
                                         </select>
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">CATEGORY</div>
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER COUNTRY</div>
                                         <input type="text" class="form-control">
                                     </div>
-
-                                    <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">CUSTOMER COUNTRY</div>
-                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                            <option selected>All</option>
-                                            <option value="1">Not Known</option>
-                                            <option value="2">Not Known</option>
-                                        </select>
-                                    </div>
-
                                 </div>
 
                                 <div class="col-md-4">
@@ -109,7 +118,7 @@
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">CUSTOMER TYPE</div>
+                                        <div class="input-group-text col-sm-4 txtSize">BUYER TYPE</div>
                                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                             <option selected>All</option>
                                             <option value="1">Distributor</option>
@@ -121,54 +130,10 @@
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">SAP CUSTOMER ID</div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">BRAND</div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">DEALER CATEGORY</div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">SP/FP</div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-4">
-                                    <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">IMEI</div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">MATERIAL ID</div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">SALES REGION</div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="input-group input-group-sm mb-2">
                                         <div class="input-group-text col-sm-4 txtSize">MARKET NAME</div>
                                         <input type="text" class="form-control">
                                     </div>
 
-                                    <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">ACTIVATION TIME</div>
-                                        <input type="time" class="form-control">
-                                        _
-                                        <input type="time" class="form-control">
-                                    </div>
                                 </div>
 
                             </div>
@@ -176,15 +141,29 @@
                     </div>
                     </form>
 
-                    <div class="form-inline justify-content-end col-md-12 mt-2 mb-2">
+                    <div class="form-inline justify-content-between col-md-12 mb-2">
+                        <div class="radioButton mb-2">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">Distributor</label>
+                            </div>
+
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Sub-Dealer</label>
+                            </div>
+                        </div>
+
                         <div class="button mb-2">
-                            <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                    class="fa-regular fa-share-from-square"></i> Export</button>
-                            <button id="uploadButton" class="btn btn-outline-dark btn-sm"><i
-                                    class="fa-solid fa-arrow-up-from-bracket"></i> Import</button>
-                            <input type="file" id="excelFileInput" style="display: none;">
+                            <button id="uploadButton" class="btn btn-outline-danger btn-sm"><i
+                                    class="fa-solid fa-share-from-square"></i> Export</button>
+                            <button id="uploadButton" class="btn btn-outline-warning btn-sm">Data Updated Time : Updated
+                                Successfully</button>
                         </div>
                     </div>
+
 
                     <!-------------- Table ----------------->
                     <div class="container-fluid">
@@ -192,43 +171,33 @@
                             <table id="myTable" class="table table-striped table-bordered small">
                                 <thead>
                                     <tr class="font-weight-bold">
-                                        <td>Status</td>
-                                        <td>Box ID</td>
-                                        <td>IMEI/SN</td>
-                                        <td>IMEI List</td>
+                                        <td>Seller ID</td>
+                                        <td>Seller Name</td>
+                                        <td>Start Date</td>
+                                        <td>End Date</td>
                                         <td>Brand</td>
                                         <td>Category</td>
-                                        <td>Series</td>
+                                        <td>SP/FP</td>
+                                        <td>Item</td>
                                         <td>Model</td>
                                         <td>Market Name</td>
-                                        <td>Material ID</td>
-                                        <td>Product</td>
-                                        <td>Item</td>
-                                        <td>Type</td>
-                                        <td>Warehouse ID</td>
-                                        <td>Warehouse Name</td>
-                                        <td>Warehouse Type</td>
-                                        <td>SAP Customer ID</td>
-                                        <td>Customer ID</td>
-                                        <td>Customer Name</td>
-                                        <td>Customer Type</td>
-                                        <td>Upstream Delivery Date</td>
-                                        <td>Receive Date</td>
-                                        <td>Inventory Duration</td>
-                                        <td>E Warrenty Date</td>
-                                        <td>Activated Or Not</td>
-                                        <td>Activated Country</td>
-                                        <td>Activation Date</td>
-                                        <td>Sales Region1</td>
-                                        <td>Sales Region2</td>
-                                        <td>Sales Region3</td>
-                                        <td>sales Region4</td>
-                                        <td>Sales Region5</td>
-                                        <td>Dealer Category</td>
-                                        <td>Factory Delivery Country</td>
-                                        <td>Factory Delivery Date</td>
-                                        <td>Customer Country</td>
-                                        <td>SP/FP</td>
+                                        <td>Color</td>
+                                        <td>Delivery</td>
+                                        <td>Return</td>
+                                        <td>Actual Sales</td>
+                                        <td>Activated Of Sales</td>
+                                        <td>Period Activated</td>
+                                        <td>Buyer ID</td>
+                                        <td>Buyer Name</td>
+                                        <td>Buyer Type</td>
+                                        <td>Buyer Category</td>
+                                        <td>Buyer Region1</td>
+                                        <td>Buyer Region2</td>
+                                        <td>Buyer Region3</td>
+                                        <td>Buyer Region4</td>
+                                        <td>Buyer Region5</td>
+                                        <td>Buyer Country</td>
+                                        <td>Seller Country</td>
                                     </tr>
                                 </thead>
                             </table>
