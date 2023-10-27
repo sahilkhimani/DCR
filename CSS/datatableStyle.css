@@ -41,3 +41,15 @@
 input[type], select{
     font-size: 12px !important;
 }
+
+.box {
+    width: 20vh;
+    height: 85vh;
+    padding-top: 15px;
+    border: 2px solid rgba(26, 33, 104, 0.452);
+    border-radius: 6px;
+}
+
+td{
+    white-space: nowrap;
+}

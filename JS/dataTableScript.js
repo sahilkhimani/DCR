@@ -1,17 +1,19 @@
-document.getElementById('uploadButton').addEventListener('click', function () {
-    document.getElementById('excelFileInput').click();
-});
-
 $(document).ready(function () {
     $('#myTable').DataTable({
         dom: "lBfrtip",
         "scrollX": true,
         "scrollY": '500px',
-        "paging": true, // Enable pagination
-        "searching": true, // Enable search 
+        "paging": true, 
+        "searching": true, 
         "processing": true,
+        "lengthMenu": [ [20, 30, 50, -1], [20, 30, 50, "All"] ],
     });
 });
+
+document.getElementById('uploadButton').addEventListener('click', function () {
+    document.getElementById('excelFileInput').click();
+});
+
 
 
 document.getElementById("excelFileInput").addEventListener("change", function (e) {

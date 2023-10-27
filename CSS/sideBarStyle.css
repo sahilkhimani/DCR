@@ -159,10 +159,6 @@ a.sidebar-link {
     width: 9px;
 }
 
-::-webkit-scrollbar-track {
-    background: #beb7b7;
-}
-
 ::-webkit-scrollbar-thumb {
     background: #888;
 }

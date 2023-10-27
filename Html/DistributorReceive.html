@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Inventory Query New</title>
-    <script src="./JS/kit.fontawesome.js"></script>
-    <script src="./JS/xlsx.full.min.js"></script>
-    <script src="./JS/jquery-3.1.1.min.js"></script>
-    <script src="./JS/jquery-3.6.0.min.js"></script>
-    <script src="./JS/jquery-datatables.min.js"></script>
-    <script src="./JS/datatables.button.min.js"></script>
-    <link rel="stylesheet" href="./CSS/bootstrap.min-4.css">
-    <link rel="stylesheet" href="./CSS/bootstrap.min-5.css">
-    <link rel="stylesheet" href="./CSS/datatables.min.css">
-    <link rel="stylesheet" href="./CSS/databtables.bootstrap.buttons.min.css">
-    <link rel="stylesheet" href="./CSS/sideBarStyle.css">
-    <link rel="stylesheet" href="./CSS/datatableStyle.css">
+    <title>Distributor Receive</title>
+    <script src="../JS/kit.fontawesome.js"></script>
+    <script src="../JS/xlsx.full.min.js"></script>
+    <script src="../JS/jquery-3.1.1.min.js"></script>
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/jquery-datatables.min.js"></script>
+    <script src="../JS/datatables.button.min.js"></script>
+    <link rel="stylesheet" href="../CSS/bootstrap.min-4.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min-5.css">
+    <link rel="stylesheet" href="../CSS/datatables.min.css">
+    <link rel="stylesheet" href="../CSS/databtables.bootstrap.buttons.min.css">
+    <link rel="stylesheet" href="../CSS/sideBarStyle.css">
+    <link rel="stylesheet" href="../CSS/datatableStyle.css">
 </head>
 
 <body>
@@ -68,17 +68,27 @@
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">SALES REGION</div>
+                                        <div class="input-group-text col-sm-4 txtSize">DN</div>
                                         <input type="text" class="form-control">
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">ITEM</div>
+                                        <div class="input-group-text col-sm-4 txtSize">BRAND</div>
                                         <input type="text" class="form-control">
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">CUSTOMER CATEGORY</div>
+                                        <div class="input-group-text col-sm-4 txtSize">BOX</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">COUNTRY</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">DN REMARK</div>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
@@ -90,7 +100,14 @@
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">WAREHOUSE</div>
+                                        <div class="input-group-text col-sm-4 txtSize">SAP DELIVERY DATE</div>
+                                        <input type="date" class="form-control">
+                                        _
+                                        <input type="date" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">CATEGORY</div>
                                         <input type="text" class="form-control">
                                     </div>
 
@@ -100,37 +117,61 @@
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">CUSTOMER TYPE</div>
+                                        <div class="input-group-text col-sm-4 txtSize">STATUS</div>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">COUNTRY</div>
+                                        <div class="input-group-text col-sm-4 txtSize">MATERIAL ID</div>
                                         <input type="text" class="form-control">
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">BRAND</div>
+                                        <div class="input-group-text col-sm-4 txtSize">SAP CUSTOMER ID</div>
                                         <input type="text" class="form-control">
                                     </div>
 
                                     <div class="input-group input-group-sm mb-2">
-                                        <div class="input-group-text col-sm-4 txtSize">SP/FP</div>
-                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                            <option selected>All</option>
-                                            <option value="1">Smart</option>
-                                            <option value="2">Feature</option>
-                                        </select>
+                                        <div class="input-group-text col-sm-4 txtSize">IMEI</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">CUSTOMER REGION</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">LOGISTIC NUMBER</div>
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
                             </div>
                         </form>
 
-                        <div class="form-inline justify-content-end col-md-12 mb-2">
+                        <div class="form-inline justify-content-between col-md-12 mb-2">
+                            <div class="radioButton mb-2">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline1">Mobile</label>
+                                </div>
+
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2">Other</label>
+                                </div>
+                            </div>
+
                             <div class="button mb-2">
                                 <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                        class="fa-solid fa-circle-notch"></i> Quick Recieve</button>
+                                <button type="button" class="btn btn-outline-success btn-sm"><i
+                                        class="fa-regular fa-note-sticky"></i> Stock-In by Scan</button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i
                                         class="fa-regular fa-share-from-square"></i> Export</button>
                                 <button id="uploadButton" class="btn btn-outline-dark btn-sm"><i
                                         class="fa-solid fa-arrow-up-from-bracket"></i> Import Recieve</button>
@@ -138,37 +179,41 @@
                             </div>
                         </div>
 
+
                         <!-------------- Table ----------------->
                         <div class="container-fluid">
                             <div class="tablecard small col-md-12">
                                 <table id="myTable" class="table table-striped table-bordered small">
                                     <thead>
                                         <tr class="font-weight-bold">
-                                            <td>Consumer ID</td>
-                                            <td>Consumer Name</td>
-                                            <td>Consumer Type</td>
-                                            <td>WarehouseID</td>
-                                            <td>Warehouse Name</td>
+                                            <td>DN</td>
+                                            <td>Status</td>
+                                            <td>SAP Delivery Date</td>
                                             <td>Product</td>
-                                            <td>Brand</td>
-                                            <td>Series</td>
-                                            <td>SP/FP</td>
                                             <td>Item</td>
+                                            <td>Brand</td>
                                             <td>Model</td>
+                                            <td>Category</td>
+                                            <td>Series</td>
                                             <td>Market Name</td>
-                                            <td>Memory</td>
-                                            <td>Color</td>
-                                            <td>Total Inventory</td>
-                                            <td>Total Activated Inventory</td>
-                                            <td>Inactive Inventory</td>
-                                            <td>Customer Category</td>
-                                            <td>Customer Grade</td>
+                                            <td>Order Quantity</td>
+                                            <td>Total Quantity</td>
+                                            <td>Recieved Quantity</td>
+                                            <td>Unrecieved Quantity</td>
+                                            <td>Return Quantity</td>
+                                            <td>Total Amount</td>
+                                            <td>Delivery Country</td>
+                                            <td>SAP Customer ID</td>
+                                            <td>Customer Name</td>
                                             <td>Country</td>
-                                            <td>Sales Region1</td>
-                                            <td>Sales Region2</td>
-                                            <td>Sales Region3</td>
-                                            <td>Sales Region4</td>
-                                            <td>Sales Region5</td>
+                                            <td>Customer Region1</td>
+                                            <td>Customer Region2</td>
+                                            <td>Customer Region3</td>
+                                            <td>Logistic Number</td>
+                                            <td>DN Remark</td>
+                                            <td>DN Create Date</td>
+                                            <td>Update Date</td>
+                                            <td>Operation</td>
                                         </tr>
                                     </thead>
                                 </table>
@@ -179,10 +224,11 @@
             </main>
         </div>
     </div>
-    <script src="./JS/dataTableScript.js"></script>
-    <script src="./JS/datatables.bootstrap.buttons.js"></script>
-    <script src="./JS/bootstrap.bundle.min-5.js"></script>
-    <script src="./JS/sideBarScript.js"></script>
+    <script src="../JS/dataTableScript.js"></script>
+    <script src="../JS/datatables.bootstrap.buttons.js"></script>
+    <script src="../JS/bootstrap.bundle.min-5.js"></script>
+    <script src="../JS/sideBarScript.js"></script>
+
 </body>
 
 </html>

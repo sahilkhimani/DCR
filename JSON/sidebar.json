@@ -222,5 +222,29 @@
         "hasChildren": false,
         "url": "IMEIQuery.html",
         "parentID": ""
+    },
+    {
+        "ID": "29",
+        "name": "Master",
+        "icon": "fa-solid fa-brain",
+        "hasChildren": true,
+        "url": "",
+        "parentID": ""
+    },
+    {
+        "ID": "30",
+        "name": "Business Partners",
+        "icon": "",
+        "hasChildren": false,
+        "url": "BusinessPartners.html",
+        "parentID": "29"
+    },
+    {
+        "ID": "31",
+        "name": "Product",
+        "icon": "",
+        "hasChildren": false,
+        "url": "Product.html",
+        "parentID": "29"
     }
 ]
