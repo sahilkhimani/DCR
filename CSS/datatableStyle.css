@@ -4,7 +4,7 @@
     padding: 0.2rem 0.5rem;
 }
 
-.txtSize{
+.txtSize {
     font-size: 11px !important;
     white-space: wrap;
     text-align: left;
@@ -34,22 +34,24 @@
     font-size: small;
 }
 
-#myTable{
+#myTable {
     width: 100% !important;
 }
 
-input[type], select{
+input[type],
+select {
     font-size: 12px !important;
 }
 
-.box {
-    width: 20vh;
-    height: 85vh;
-    padding-top: 15px;
+#box {
+    width: 110%;
+    height: 620px;
+    margin-left: -20px;
     border: 2px solid rgba(26, 33, 104, 0.452);
     border-radius: 6px;
+    font-style: italic;
 }
 
-td{
+td {
     white-space: nowrap;
 }
