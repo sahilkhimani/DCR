@@ -46,10 +46,10 @@ toggler.addEventListener("click", function () {
 });
 
 
-// $(window).on('resize', function (e) {
-//     var windowWidth = $(window).width();
+$(window).on('resize', function (e) {
+    var windowWidth = $(window).width();
 
-//     if (windowWidth < 560) {
-//         document.querySelector("#sidebar").classList.toggle("collapsed");
-//     }
-// });
+    if (windowWidth < 560) {
+        document.querySelector("#sidebar").classList.toggle("collapsed");
+    }
+});
