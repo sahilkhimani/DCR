@@ -247,4 +247,13 @@
         "url": "Product.html",
         "parentID": "29"
     }
+    ,
+    {
+        "ID": "32",
+        "name": "User",
+        "icon": "",
+        "hasChildren": false,
+        "url": "User.html",
+        "parentID": "29"
+    }
 ]
