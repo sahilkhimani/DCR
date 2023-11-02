@@ -246,14 +246,29 @@
         "hasChildren": false,
         "url": "Product.html",
         "parentID": "29"
-    }
-    ,
+    },
     {
         "ID": "32",
         "name": "User",
         "icon": "",
         "hasChildren": false,
         "url": "User.html",
+        "parentID": "29"
+    },
+    {
+        "ID": "33",
+        "name": "IMEI",
+        "icon": "",
+        "hasChildren": false,
+        "url": "IMEI.html",
+        "parentID": "29"
+    },
+    {
+        "ID": "34",
+        "name": "Warehouse Add",
+        "icon": "",
+        "hasChildren": false,
+        "url": "WarehouseAdd.html",
         "parentID": "29"
     }
 ]

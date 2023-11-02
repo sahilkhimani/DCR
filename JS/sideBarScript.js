@@ -40,8 +40,13 @@ $.ajax({
 
 
 
-const toggler = document.querySelector(".btn");
+const toggler = document.querySelector("#toggle_btn");
 toggler.addEventListener("click", function () {
+    document.querySelector("#sidebar").classList.toggle("collapsed");
+});
+
+const add_toggle = document.querySelector("#add_btn");
+add_toggle.addEventListener("click", function () {
     document.querySelector("#sidebar").classList.toggle("collapsed");
 });
 
@@ -53,3 +58,4 @@ $(window).on('resize', function (e) {
         document.querySelector("#sidebar").classList.toggle("collapsed");
     }
 });
+

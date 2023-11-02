@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add User</title>
+    <title>Business Partners</title>
     <script src="../JS/kit.fontawesome.js"></script>
     <script src="../JS/xlsx.full.min.js"></script>
     <script src="../JS/jquery-3.1.1.min.js"></script>
@@ -63,14 +63,14 @@
                         <div class="form-inline justify-content-between col-md-12 mb-2">
                             <div class="button">
                                 <button type="button" data-toggle="modal" data-target="#exampleModalCenter"
-                                    class="btn btn-primary btn-sm" id="add_btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                    class="btn btn-primary btn-sm mb-2" id="add_btn"><i class="fa-solid fa-plus"></i> Add</button>
                             </div>
                             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">ADD User</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle">ADD PRODUCT</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -80,19 +80,19 @@
                                                 <div class="row ">
                                                     <div class="col-md-6">
                                                         <div class="input-group input-group-sm mb-3">
-                                                            <div class="input-group-text col-sm-4 txtSize">USER ID
+                                                            <div class="input-group-text col-sm-4 txtSize">WAREHOUSE ID
                                                             </div>
                                                             <input type="text" class="form-control" placeholder="">
                                                         </div>
 
                                                         <div class="input-group input-group-sm mb-3">
-                                                            <div class="input-group-text col-sm-4 txtSize">USER NAME
+                                                            <div class="input-group-text col-sm-4 txtSize">WAREHOUSE REF ID
                                                             </div>
                                                             <input type="text" class="form-control" placeholder="">
                                                         </div>
 
                                                         <div class="input-group input-group-sm mb-3">
-                                                            <div class="input-group-text col-sm-4 txtSize">USER LOGIN ID
+                                                            <div class="input-group-text col-sm-4 txtSize">WAREHOUSE NAME
                                                             </div>
                                                             <input type="text" class="form-control" placeholder="">
                                                         </div>
@@ -102,28 +102,30 @@
                                                     <div class="col-md-6">
 
                                                         <div class="input-group input-group-sm mb-3">
-                                                            <div class="input-group-text col-sm-4 txtSize">USER EMAIL
-                                                            </div>
-                                                            <input type="email" class="form-control" placeholder="">
-                                                        </div>
-
-                                                        <div class="input-group input-group-sm mb-3">
-                                                            <div class="input-group-text col-sm-4 txtSize">USER CONTACT
-                                                            </div>
-                                                            <input type="text" class="form-control" placeholder="">
-                                                        </div>
-                                                        <div class="input-group input-group-sm mb-3">
-                                                            <div class="input-group-text col-sm-4 txtSize">USER TYPE
+                                                            <div class="input-group-text col-sm-4 txtSize">WAREHOUSE TYPE
                                                             </div>
                                                             <select class="form-select form-select-sm"
                                                                 aria-label=".form-select-sm example">
-                                                                <option selected disabled>All</option>
-                                                                <option value="1">Distributor</option>
-                                                                <option value="2">Sub-Dealer</option>
-                                                                <option value="3">Third-Dealer</option>
-                                                                <option value="3">Retailer</option>
-                                                                <option value="4">Online</option>
+                                                                <option selected>All</option>
+                                                                <option value="1">NOT KNOWN</option>
+                                                                <option value="2">NOT KNOWN</option>
+                                                                <option value="3">NOT KNOWN</option>
                                                             </select>
+                                                        </div>
+
+                                                        <div class="input-group input-group-sm mb-3">
+                                                            <div class="input-group-text col-sm-4 txtSize">
+                                                                WAREHOUSE MANAGER
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="">
+                                                        </div>
+
+                                                       
+
+                                                        <div class="input-group input-group-sm mb-3">
+                                                            <div class="input-group-text col-sm-4 txtSize">
+                                                                WAREHOUSE COUNTRY</div>
+                                                            <input type="date" class="form-control" placeholder="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -143,12 +145,12 @@
                                 <table id="myTable" class="table table-striped table-bordered small">
                                     <thead>
                                         <tr class="font-weight-bold">
-                                            <td>User ID</td>
-                                            <td>User Login ID</td>
-                                            <td>User Name</td>
-                                            <td>User Email</td>
-                                            <td>User Contact</td>
-                                            <td>User Type</td>
+                                            <td>Warehouse ID</td>
+                                            <td>Warehouse ref ID</td>
+                                            <td>Warehouse Name</td>
+                                            <td>Warehouse Type</td>
+                                            <td>Warehouse Manager</td>
+                                            <td>Warehouse Country</td>
                                             <td>Edit</td>
                                             <td>Delete</td>
                                         </tr>
@@ -161,6 +163,8 @@
             </main>
         </div>
     </div>
+
+
     <script src="../JS/dataTableScript.js"></script>
     <script src="../JS/datatables.bootstrap.buttons.js"></script>
     <script src="../JS/bootstrap.bundle.min-5.js"></script>

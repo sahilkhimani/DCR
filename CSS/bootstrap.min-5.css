@@ -4917,7 +4917,8 @@ fieldset:disabled .btn {
 
 .navbar-expand {
     flex-wrap: nowrap;
-    justify-content: flex-start
+    justify-content: flex-start;
+    padding: 0;
 }
 
 .navbar-expand .navbar-nav {
