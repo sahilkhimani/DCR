@@ -37,19 +37,21 @@ $.ajax({
     }
 })
 
-
-
-
-const toggler = document.querySelector("#toggle_btn");
-toggler.addEventListener("click", function () {
+function collapSidebar() {
     document.querySelector("#sidebar").classList.toggle("collapsed");
-});
+}
 
-const add_toggle = document.querySelector("#add_btn");
-add_toggle.addEventListener("click", function () {
-    document.querySelector("#sidebar").classList.toggle("collapsed");
-});
+$('#toggle_btn').on("click", function () {
+    collapSidebar();
+})
 
+$('.add_btn').on("click", function () {
+    collapSidebar();
+})
+
+$('.fullModal').focusout(function () {
+    collapSidebar();
+})
 
 $(window).on('resize', function (e) {
     var windowWidth = $(window).width();
