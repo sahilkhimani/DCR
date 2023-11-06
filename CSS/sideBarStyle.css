@@ -149,7 +149,7 @@ a.sidebar-link {
     text-decoration: none;
 }
 
-.sidebar-logo a:hover{
+.sidebar-logo a:hover {
     text-decoration: none;
 }
 
@@ -166,3 +166,30 @@ a.sidebar-link {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+textarea {
+    resize: none;
+}
+
+/* Fold/Unfold */
+
+#toggleButton {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: small;
+    background-color: transparent;
+    color: rgb(10, 83, 240);
+}
+
+/* #inputContainer{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    height: 0;
+}
+
+#inputContainer:target {
+    height: auto;
+} */

@@ -49,10 +49,6 @@ $('.add_btn').on("click", function () {
     collapSidebar();
 })
 
-$('.fullModal').focusout(function () {
-    collapSidebar();
-})
-
 $(window).on('resize', function (e) {
     var windowWidth = $(window).width();
 
@@ -60,4 +56,20 @@ $(window).on('resize', function (e) {
         document.querySelector("#sidebar").classList.toggle("collapsed");
     }
 });
+
+var container = document.getElementById('inputContainer');
+container.style.display = 'none';
+
+$(document).ready(function () {
+    $('#toggleButton').click(function () {
+        if(container.style.display == 'none'){
+            container.style.display = 'flex';
+            $('#toggleButton').text('Ʌ Fold');
+        }
+        else{
+            container.style.display = 'none';
+            $('#toggleButton').text('V Unfold');
+        }
+    })
+})
 
