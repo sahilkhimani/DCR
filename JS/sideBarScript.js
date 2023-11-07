@@ -62,13 +62,13 @@ container.style.display = 'none';
 
 $(document).ready(function () {
     $('#toggleButton').click(function () {
-        if(container.style.display == 'none'){
+        if (container.style.display == 'none') {
             container.style.display = 'flex';
-            $('#toggleButton').text('Ʌ Fold');
+            $('#toggleButton').html("<i class='fa-solid fa-chevron-up'></i> Fold");
         }
-        else{
+        else {
             container.style.display = 'none';
-            $('#toggleButton').text('V Unfold');
+            $('#toggleButton').html("<i class='fa-solid fa-chevron-down'></i> Unfold");
         }
     })
 })

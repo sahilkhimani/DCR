@@ -182,14 +182,17 @@ textarea {
     color: rgb(10, 83, 240);
 }
 
-/* #inputContainer{
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    transition: all .5s ease;
-    height: 0;
+@keyframes easeOutElastic {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
-#inputContainer:target {
-    height: auto;
-} */
+
+#inputContainer {
+    animation: easeOutElastic 0.5s forwards;
+}

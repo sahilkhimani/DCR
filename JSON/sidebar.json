@@ -236,7 +236,7 @@
         "name": "Business Partners Add",
         "icon": "",
         "hasChildren": false,
-        "url": "BusinessPartnersAdd.html",
+        "url": "AddBusinessPartners.html",
         "parentID": "29"
     },
     {
@@ -244,7 +244,7 @@
         "name": "Product Add",
         "icon": "",
         "hasChildren": false,
-        "url": "ProductAdd.html",
+        "url": "AddProduct.html",
         "parentID": "29"
     },
     {
@@ -252,7 +252,7 @@
         "name": "User Add",
         "icon": "",
         "hasChildren": false,
-        "url": "UserAdd.html",
+        "url": "AddUser.html",
         "parentID": "29"
     },
     {
@@ -260,7 +260,7 @@
         "name": "IMEI Add",
         "icon": "",
         "hasChildren": false,
-        "url": "IMEIAdd.html",
+        "url": "AddIMEI.html",
         "parentID": "29"
     },
     {
@@ -268,7 +268,7 @@
         "name": "Warehouse Add",
         "icon": "",
         "hasChildren": false,
-        "url": "WarehouseAdd.html",
+        "url": "AddWarehouse.html",
         "parentID": "29"
     }
 ]
