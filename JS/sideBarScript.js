@@ -69,7 +69,7 @@ $(document).ready(function () {
         else {
             container.style.display = 'none';
             $('#toggleButton').html("<i class='fa-solid fa-chevron-down'></i> Unfold");
-        }
+        }       
     })
 })
 

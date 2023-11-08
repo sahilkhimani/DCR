@@ -181,18 +181,18 @@ textarea {
     background-color: transparent;
     color: rgb(10, 83, 240);
 }
+/* 
 
 @keyframes easeOutElastic {
     0% {
-        transform: translateY(100%);
+        height: translateY(100%);
     }
 
     100% {
-        transform: translateY(0%);
+        height: translateY(0%);
     }
 }
 
-
 #inputContainer {
     animation: easeOutElastic 0.5s forwards;
-}
+} */

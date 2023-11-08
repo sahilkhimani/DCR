@@ -233,7 +233,7 @@
     },
     {
         "ID": "30",
-        "name": "Business Partners Add",
+        "name": "Business Partners",
         "icon": "",
         "hasChildren": false,
         "url": "AddBusinessPartners.html",
@@ -241,7 +241,7 @@
     },
     {
         "ID": "31",
-        "name": "Product Add",
+        "name": "Product",
         "icon": "",
         "hasChildren": false,
         "url": "AddProduct.html",
@@ -249,7 +249,7 @@
     },
     {
         "ID": "32",
-        "name": "User Add",
+        "name": "User",
         "icon": "",
         "hasChildren": false,
         "url": "AddUser.html",
@@ -257,7 +257,7 @@
     },
     {
         "ID": "33",
-        "name": "IMEI Add",
+        "name": "IMEI",
         "icon": "",
         "hasChildren": false,
         "url": "AddIMEI.html",
@@ -265,7 +265,7 @@
     },
     {
         "ID": "34",
-        "name": "Warehouse Add",
+        "name": "Warehouse",
         "icon": "",
         "hasChildren": false,
         "url": "AddWarehouse.html",
