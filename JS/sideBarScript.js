@@ -1,3 +1,5 @@
+const pathname = window.location.pathname.split('/')[2];
+
 $.ajax({
     "url": "../JSON/sidebar.json",
     type: "GET",
@@ -32,6 +34,10 @@ $.ajax({
                 }
                 tempMenu += `</ul></li>`;
             }
+            if (resp[i].url == pathname) {
+                $('#url').html(resp[i].parentName + ' <i class="fas fa-angle-right"></i> ' + resp[i].name);
+            }
+
         }
         $('#sideBarMenus').html(tempMenu);
     }
@@ -69,7 +75,6 @@ $(document).ready(function () {
         else {
             container.style.display = 'none';
             $('#toggleButton').html("<i class='fa-solid fa-chevron-down'></i> Unfold");
-        }       
+        }
     })
 })
-

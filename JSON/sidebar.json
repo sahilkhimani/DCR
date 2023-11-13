@@ -5,7 +5,8 @@
         "icon": "fas fa-tachometer-alt",
         "hasChildren": false,
         "url": "dashboard.html",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "2",
@@ -13,7 +14,8 @@
         "icon": "fas fa-columns",
         "hasChildren": true,
         "url": "",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "3",
@@ -21,7 +23,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "ImportData.html",
-        "parentID": "2"
+        "parentID": "2",
+        "parentName": "Basic Data"
     },
     {
         "ID": "4",
@@ -29,7 +32,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "ExportData.html",
-        "parentID": "2"
+        "parentID": "2",
+        "parentName": "Basic Data"
     },
     {
         "ID": "5",
@@ -37,7 +41,8 @@
         "icon": "fa-solid fa-tag",
         "hasChildren": true,
         "url": "",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "6",
@@ -45,7 +50,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "CustomerPrice.html",
-        "parentID": "5"
+        "parentID": "5",
+        "parentName": "Model & Price"
     },
     {
         "ID": "7",
@@ -53,7 +59,8 @@
         "icon": "fas fa-user",
         "hasChildren": true,
         "url": "",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "8",
@@ -61,7 +68,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "Warehouse.html",
-        "parentID": "7"
+        "parentID": "7",
+        "parentName": "Account"
     },
     {
         "ID": "9",
@@ -69,7 +77,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "CustomerPermission.html",
-        "parentID": "7"
+        "parentID": "7",
+        "parentName": "Account"
     },
     {
         "ID": "10",
@@ -77,7 +86,8 @@
         "icon": "fa fa-shopping-cart",
         "hasChildren": true,
         "url": "",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "11",
@@ -85,7 +95,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "DistributorReceive.html",
-        "parentID": "10"
+        "parentID": "10",
+        "parentName": "Purchase"
     },
     {
         "ID": "12",
@@ -93,7 +104,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "InboundOrder.html",
-        "parentID": "10"
+        "parentID": "10",
+        "parentName": "Purchase"
     },
     {
         "ID": "13",
@@ -101,7 +113,8 @@
         "icon": "fa-solid fa-scale-balanced",
         "hasChildren": true,
         "url": "",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "14",
@@ -109,7 +122,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "DeliveryOrder.html",
-        "parentID": "13"
+        "parentID": "13",
+        "parentName": "Sales"
     },
     {
         "ID": "15",
@@ -117,7 +131,8 @@
         "icon": "fa-solid fa-clipboard-check",
         "hasChildren": true,
         "url": "",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "16",
@@ -125,7 +140,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "CustomerInventoryQuery.html",
-        "parentID": "15"
+        "parentID": "15",
+        "parentName": "Inventory"
     },
     {
         "ID": "17",
@@ -133,7 +149,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "InventoryInitialization.html",
-        "parentID": "15"
+        "parentID": "15",
+        "parentName": "Inventory"
     },
     {
         "ID": "18",
@@ -141,7 +158,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "ImeiInventoryQueryNew.html",
-        "parentID": "15"
+        "parentID": "15",
+        "parentName": "Inventory"
     },
     {
         "ID": "19",
@@ -149,7 +167,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "CustomerTransfer.html",
-        "parentID": "15"
+        "parentID": "15",
+        "parentName": "Inventory"
     },
     {
         "ID": "20",
@@ -157,7 +176,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "InventoryLossesCheck.html",
-        "parentID": "15"
+        "parentID": "15",
+        "parentName": "Inventory"
     },
     {
         "ID": "21",
@@ -165,7 +185,8 @@
         "icon": "fa fa-file",
         "hasChildren": true,
         "url": "",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "22",
@@ -173,7 +194,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "IMEIPurchaseQueryNew.html",
-        "parentID": "21"
+        "parentID": "21",
+        "parentName": "Report Analysis"
     },
     {
         "ID": "23",
@@ -181,7 +203,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "IMEISalesQueryNew.html",
-        "parentID": "21"
+        "parentID": "21",
+        "parentName": "Report Analysis"
     },
     {
         "ID": "24",
@@ -189,7 +212,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "IMEIReturnQuery.html",
-        "parentID": "21"
+        "parentID": "21",
+        "parentName": "Report Analysis"
     },
     {
         "ID": "25",
@@ -197,7 +221,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "CustomerSalesQuery.html",
-        "parentID": "21"
+        "parentID": "21",
+        "parentName": "Report Analysis"
     },
     {
         "ID": "26",
@@ -205,7 +230,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "CustomerPSI.html",
-        "parentID": "21"
+        "parentID": "21",
+        "parentName": "Report Analysis"
     },
     {
         "ID": "27",
@@ -213,7 +239,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "CustomerActivationPSI.html",
-        "parentID": "21"
+        "parentID": "21",
+        "parentName": "Report Analysis"
     },
     {
         "ID": "28",
@@ -221,7 +248,8 @@
         "icon": "fa-solid fa-qrcode",
         "hasChildren": false,
         "url": "IMEIQuery.html",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "29",
@@ -229,7 +257,8 @@
         "icon": "fa-solid fa-brain",
         "hasChildren": true,
         "url": "",
-        "parentID": ""
+        "parentID": "",
+        "parentName": ""
     },
     {
         "ID": "30",
@@ -237,7 +266,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "AddBusinessPartners.html",
-        "parentID": "29"
+        "parentID": "29",
+        "parentName": "Master"
     },
     {
         "ID": "31",
@@ -245,7 +275,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "AddProduct.html",
-        "parentID": "29"
+        "parentID": "29",
+        "parentName": "Master"
     },
     {
         "ID": "32",
@@ -253,7 +284,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "AddUser.html",
-        "parentID": "29"
+        "parentID": "29",
+        "parentName": "Master"
     },
     {
         "ID": "33",
@@ -261,7 +293,8 @@
         "icon": "",
         "hasChildren": false,
         "url": "AddIMEI.html",
-        "parentID": "29"
+        "parentID": "29",
+        "parentName": "Master"
     },
     {
         "ID": "34",
@@ -269,6 +302,7 @@
         "icon": "",
         "hasChildren": false,
         "url": "AddWarehouse.html",
-        "parentID": "29"
+        "parentID": "29",
+        "parentName": "Master"
     }
 ]

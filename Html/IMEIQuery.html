@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../CSS/sideBarStyle.css">
     <link rel="stylesheet" href="../CSS/datatableStyle.css">
     <style>
-       
+
     </style>
 </head>
 
@@ -40,9 +40,10 @@
         <div class="main">
             <nav class="navbar navbar-expand px-3 border-bottom">
                 <!-- Button for sidebar toggle -->
-                <button class="btn" type="button" id="toggle_btn">
+                <button class="btn mr-3" type="button" id="toggle_btn">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <span id="url"></span>
                 <div id="navRightMenus">
                     <ul class="navbar-nav">
                         <li class="dropdown">
@@ -86,7 +87,8 @@
                         <!-------------- Table ----------------->
                         <div class="container-fluid form-inline">
                             <div class="form-outline col-md-2">
-                                <textarea class="form-control" id="box" placeholder="Please Enter IMEI To Check . . ."></textarea>
+                                <textarea class="form-control" id="box"
+                                    placeholder="Please Enter IMEI To Check . . ."></textarea>
                             </div>
                             <div class="tablecard small col-md-10">
                                 <table id="myTable" class="table table-striped table-bordered small">
