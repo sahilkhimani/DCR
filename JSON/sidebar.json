@@ -110,7 +110,7 @@
     {
         "ID": "13",
         "name": "Sales",
-        "icon": "fa-solid fa-scale-balanced",
+        "icon": "fa-solid fa-chart-simple",
         "hasChildren": true,
         "url": "",
         "parentID": "",

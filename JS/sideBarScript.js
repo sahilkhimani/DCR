@@ -30,15 +30,17 @@ $.ajax({
                         <a href="${resp[index].url}" class="sidebar-link">${resp[index].name}</a>
                         </li>`;
                     }
-
                 }
                 tempMenu += `</ul></li>`;
             }
-            if (resp[i].url == pathname) {
+            if (resp[i].url == pathname && resp[i].parentName == "") {
+                $('#url').html(resp[i].name);
+            }
+            else if(resp[i].url == pathname) {
                 $('#url').html(resp[i].parentName + ' <i class="fas fa-angle-right"></i> ' + resp[i].name);
             }
-
         }
+        
         $('#sideBarMenus').html(tempMenu);
     }
 })
